@@ -5,19 +5,29 @@
 	xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<!-- bean definitions here -->
+	<!-- bean definitions here Constructor injection -->
+
+	<!-- <bean id="q1" class="com.model.Question"> <constructor-arg value="101"></constructor-arg> 
+		<constructor-arg value="What is java...?"></constructor-arg> <constructor-arg> 
+		<list> <value>Java is programming Language...</value> <value>Java is platform...</value> 
+		<value>Java is Secured...</value> </list> </constructor-arg> </bean> -->
+
+	<!-- =========================================================== -->
+
+	<!-- Setter injection -->
 
 	<bean id="q1" class="com.model.Question">
-		<constructor-arg value="101"></constructor-arg>
-		<constructor-arg value="What is java...?"></constructor-arg>
-		<constructor-arg>
-			<list>
+		<property name="id" value="101"></property>
+		<property name="qname" value="what is java...?"></property>
+		<property name="answer"></property>
 
-				<value>Java is programming Language...</value>
-				<value>Java is platform...</value>
-				<value>Java is Secured...</value>
-			</list>
-		</constructor-arg>
+		<list>
+
+			<value>Java is programming Language...</value>
+			<value>Java is platform...</value>
+			<value>Java is Secured...</value>
+
+		</list>
 	</bean>
 </beans>
 
