@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here Constructor injection -->
+
+	<bean id="p1" class="com.model.Person">
+	  
+	  <!-- Using Type attribute --> 
+	   
+	    <!-- String int Constructor -->
+	    
+		<!-- <constructor-arg value="101" type="int"></constructor-arg>
+		 <constructor-arg value="Shubhangi" type="java.lang.String"></constructor-arg>
+		  -->
+		  
+			<!-- String Double -->
+	<!--  	
+		<constructor-arg value="101" type="double"></constructor-arg>
+		<constructor-arg value="Shubhangi" type="String"></constructor-arg>
+     -->	
+     
+  <!-- ======================================================================================================== -->
+  
+  <!-- Using index Attribute -->  
+   
+  <!--    < constructor-arg value="101" type="int " index ="1"></constructor-arg>
+		<constructor-arg value="Shubhangi" index="0"></constructor-arg>
+     	-->
+     	
+     <!-- ==================================================================================== -->
+     
+     <!-- Using name Attribute -->
+     
+      <constructor-arg name="city" value="pune" ></constructor-arg>
+		<constructor-arg  name="country" value="Shubhangi" ></constructor-arg>
+     	
+     
+	</bean>
+</beans>
+
