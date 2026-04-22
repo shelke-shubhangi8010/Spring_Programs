@@ -7,27 +7,36 @@
 
 	<!-- bean definitions here Constructor injection -->
 
-	<!-- <bean id="q1" class="com.model.Question"> <constructor-arg value="101"></constructor-arg> 
-		<constructor-arg value="What is java...?"></constructor-arg> <constructor-arg> 
-		<list> <value>Java is programming Language...</value> <value>Java is platform...</value> 
-		<value>Java is Secured...</value> </list> </constructor-arg> </bean> -->
+	<!-- <bean id="q1" class="com.model.Question">
+	 <constructor-arg value="1"></constructor-arg> 
+		<constructor-arg value="What is interface...?"></constructor-arg> 
+		<constructor-arg> 
+		<list> 
+		<value>interface  contain only Method Declaration....</value> 
+		<value>Interface Achieve 100% Abstraction...</value> 
+		<value>Interface Must be Implemented...</value> 
+		</list>
+		 </constructor-arg> 
+		 </bean> -->
 
 	<!-- =========================================================== -->
 
 	<!-- Setter injection -->
 
 	<bean id="q1" class="com.model.Question">
-		<property name="id" value="101"></property>
+		<property name="id" value="1"></property>
 		<property name="qname" value="what is java...?"></property>
 		<property name="answer"></property>
 
-		<list>
-
-			<value>Java is programming Language...</value>
-			<value>Java is platform...</value>
-			<value>Java is Secured...</value>
-
+	<list>
+		<value>interface  contain only Method Declaration...</value>
+			<value>Interface Achieve 100% Abstraction...</value>
+			<value>Interface Must be Implemented...</value>
 		</list>
+		
+			
+
+		
 	</bean>
 </beans>
 
