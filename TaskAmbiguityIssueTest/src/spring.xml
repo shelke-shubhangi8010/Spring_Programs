@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here Constructor injection -->
+
+	<bean id="E1" class="com.model.Employee">
+	  
+	  <!-- Using Type attribute --> 
+	   
+	    <!-- String int String Constructor -->
+	    
+		<!-- <constructor-arg value="101" type="int"></constructor-arg>
+		 <constructor-arg value="Shubhangi" type="java.lang.String"></constructor-arg>
+		 <constructor-arg value="Nashik" type="java.lang.String"></constructor-arg>
+		  -->
+		  
+			<!-- String constructor -->
+	 	<!--
+		<constructor-arg value="101" type="string"></constructor-arg>
+		<constructor-arg value="Shubhangi" type="String"></constructor-arg>
+		<constructor-arg value="Pune" type="String"></constructor-arg>
+    	-->
+     
+  <!-- ======================================================================================================== -->
+  
+  <!-- Using index Attribute -->  
+   
+  <!--    < constructor-arg value="101" type="int " index ="1"></constructor-arg>
+		<constructor-arg value="Shubhangi" index="0"></constructor-arg>
+		<constructor-arg value="Nagar" index="2"></constructor-arg>
+     	-->
+     	
+     <!-- ==================================================================================== -->
+     
+     <!-- Using name Attribute -->
+       
+      <constructor-arg name="id" value="101" ></constructor-arg>
+		<constructor-arg  name="name" value="Shubhangi" ></constructor-arg>
+		<constructor-arg  name="city" value="Kolkatta" ></constructor-arg>
+     	
+     
+	</bean>
+</beans>
