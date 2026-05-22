@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd
+      http://www.springframework.org/schema/util
+      http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<!-- Impl Beans 
+	<bean name="cust" class="com.config.task.CustomerImpl" />
+	<bean name="acc" class="com.config.task.AccountImpl" />
+	<bean name="trans" class="com.config.task.TransactionImpl" />-->
+
+	<!-- Main Class 
+	<bean id="bank" class="com.config.task.Bank">
+		<property name="customer" ref="cust" />
+		<property name="account" ref="acc" />
+		<property name="transaction" ref="trans" />
+	</bean>-->
+
+
+<context:component-scan base-package="com.config.task"></context:component-scan>
+
+
+
+</beans>
